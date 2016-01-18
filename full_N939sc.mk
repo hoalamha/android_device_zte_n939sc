@@ -18,11 +18,11 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from tomato device
-$(call inherit-product, device/zte/N939Sc/device.mk)
+$(call inherit-product, device/zte/N939sc/device.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := N939Sc
-PRODUCT_NAME := full_N939Sc
+PRODUCT_DEVICE := N939sc
+PRODUCT_NAME := full_N939sc
 PRODUCT_BRAND := zte
-PRODUCT_MODEL := N939Sc
+PRODUCT_MODEL := N939sc
 PRODUCT_MANUFACTURER := zte

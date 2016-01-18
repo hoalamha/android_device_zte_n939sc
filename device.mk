@@ -58,6 +58,9 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
+PRODUCT_BOOT_JARS += qcmediaplayer
+
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/etc/permissions/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml
 
@@ -100,6 +103,12 @@ PRODUCT_PACKAGES += \
     com.dsi.ant.antradio_library \
     libantradio
 
+PRODUCT_PACKAGES += \
+    libboringssl-compat
+
+PRODUCT_PACKAGES += \
+    libstlport
+
 # Display
 PRODUCT_PACKAGES += \
     copybit.msm8916 \
@@ -109,6 +118,17 @@ PRODUCT_PACKAGES += \
     libion \
     libtinyxml \
     memtrack.msm8916
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/gps/flp.conf:system/etc/flp.conf \
+    $(LOCAL_PATH)/gps/gps.conf:system/etc/gps.conf \
+    $(LOCAL_PATH)/gps/izat.conf:system/etc/izat.conf \
+    $(LOCAL_PATH)/gps/quipc.conf:system/etc/quipc.conf \
+    $(LOCAL_PATH)/gps/sap.conf:system/etc/sap.conf
+
+# GPS
+PRODUCT_PACKAGES += \
+    gps.msm8916
 
 # Charger
 PRODUCT_PACKAGES += \
@@ -208,9 +228,6 @@ PRODUCT_PACKAGES += \
     libextmedia_jni \
     libstagefrighthw
 
-PRODUCT_BOOT_JARS += \
-    qcmediaplayer
-
 # lights
 PRODUCT_PACKAGES += \
     lights.msm8916
@@ -235,6 +252,13 @@ PRODUCT_PROPERTY_OVERRIDES +=
 
 endif
 endif
+
+# Sensors
+PRODUCT_PACKAGES += \
+    calmodule.cfg \
+    libcalmodule_akm.so \
+    libcalmodule_common \
+    sensors.msm8916
 
 # USB
 PRODUCT_PACKAGES += \

@@ -93,9 +93,7 @@ ro.sys.fw.empty_app_percent=50
 ro.sys.fw.trim_empty_percent=100
 ro.sys.fw.trim_cache_percent=100
 ro.sys.fw.trim_enable_memory=1073741824
-#
-# from device/coolpad/8675-A/system.prop
-#
+
 # Radio
 persist.data.target=dpm1
 persist.radio.multisim.config=dsds

@@ -15,7 +15,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),N939Sc)
+ifeq ($(TARGET_DEVICE),N939sc)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 # Create a link for the WCNSS config file, which ends up as a writable

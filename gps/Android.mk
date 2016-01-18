@@ -1,3 +1,4 @@
+#
 # Copyright (C) 2014 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -11,15 +12,10 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
 
-$(call inherit-product, device/zte/N939Sc/full_N939Sc.mk)
+LOCAL_PATH := $(call my-dir)
 
-
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/sm/config/common_full_phone.mk)
-PRODUCT_BRAND := zte
-PRODUCT_NAME := sm_N939Sc
-BOARD_VENDOR := zte
-PRODUCT_DEVICE := N939Sc
-PRODUCT_MANUFACTURER := ZTE
-
+ifeq ($(TARGET_DEVICE),N939sc)
+include $(call all-subdir-makefiles,$(LOCAL_PATH))
+endif

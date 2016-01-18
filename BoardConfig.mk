@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := device/zte/N939Sc
+LOCAL_PATH := device/zte/N939sc
 
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 
@@ -52,7 +52,7 @@ BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_OFFSET := 0x02000000
 BOARD_KERNEL_SEPARATED_DT := true
-BOARD_CUSTOM_BOOTIMG_MK := device/zte/N939Sc/mkbootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/zte/N939sc/mkbootimg.mk
 
 TARGET_KERNEL_SOURCE := kernel/zte/msm8916
 TARGET_KERNEL_CONFIG := cyanogenmod_n939sc_defconfig
@@ -88,6 +88,10 @@ USE_DEVICE_SPECIFIC_QCOM_PROPRIETARY:= true
 TARGET_USES_QCOM_BSP     := true
 COMMON_GLOBAL_CFLAGS += -DQCOM_HARDWARE -DQCOM_BSP
 
+# Charger
+BOARD_CHARGER_DISABLE_INIT_BLANK := true
+BOARD_HAL_STATIC_LIBRARIES := libhealthd.cp8675
+
 # Fonts
 EXTENDED_FONT_FOOTPRINT := true
 
@@ -105,6 +109,7 @@ TARGET_USES_C2D_COMPOSITION := true
 TARGET_USES_ION := true
 USE_OPENGL_RENDERER := true
 TARGET_LDPRELOAD := libNimsWrap.so
+BOARD_USES_OPENSSL_SYMBOLS := true
 
 #Enable HW
 TARGET_HW_DISK_ENCRYPTION := true
@@ -147,6 +152,7 @@ TARGET_POWERHAL_VARIANT      := qcom
 TARGET_USES_CPU_BOOST_HINT := true
 
 # GPS
+TARGET_GPS_HAL_PATH := $(DEVICE_PATH)/gps
 TARGET_NO_RPC := true
 
 # LightHAL
@@ -168,6 +174,11 @@ BOARD_HAS_NO_MISC_PARTITION := true
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_RECOVERY_SWIPE := true
 BOARD_USES_MMCUTILS := true
+BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
+TARGET_RECOVERY_FSTAB := device/coolpad/cp8675/recovery/recovery.fstab
+
+# Video
+TARGET_HAVE_SIGNED_VENUS_FW := true
 
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk

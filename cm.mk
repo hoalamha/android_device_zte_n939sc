@@ -12,14 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, device/zte/N939St/full_N939St.mk)
+$(call inherit-product, device/zte/N939sc/full_N939sc.mk)
 
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 PRODUCT_BRAND := zte
-PRODUCT_NAME := cm_N939St
+PRODUCT_NAME := cm_N939sc
 BOARD_VENDOR := zte
-PRODUCT_DEVICE := N939St
+PRODUCT_DEVICE := N939sc
 PRODUCT_MANUFACTURER := ZTE
 
