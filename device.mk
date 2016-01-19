@@ -157,7 +157,7 @@ PRODUCT_COPY_FILES += \
 
 # Keylayout
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/keylayout/Goodix-TS.kl:system/usr/keylayout/Goodix-TS.kl
+    $(LOCAL_PATH)/keylayout/Goodix-TS.kl:system/usr/keylayout/goodix-ts.kl
 
 # Keystore
 PRODUCT_PACKAGES += \
