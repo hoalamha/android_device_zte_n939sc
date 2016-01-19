@@ -175,15 +175,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/etc/apns-conf.xml:system/etc/apns-conf.xml \
     $(LOCAL_PATH)/etc/clatd.conf:system/etc/clatd.conf \
-    $(LOCAL_PATH)/etc/flp.conf:system/etc/flp.conf \
-    $(LOCAL_PATH)/etc/gps.conf:system/etc/gps.conf \
     $(LOCAL_PATH)/etc/init.crda.sh:system/etc/init.crda.sh \
     $(LOCAL_PATH)/etc/init.qcom.bt.sh:system/etc/init.qcom.bt.sh \
     $(LOCAL_PATH)/etc/init.qcom.coex.sh:system/etc/init.qcom.coex.sh \
-    $(LOCAL_PATH)/etc/izat.conf:system/etc/izat.conf \
     $(LOCAL_PATH)/etc/lowi.conf:system/etc/lowi.conf \
-    $(LOCAL_PATH)/etc/quipc.conf:system/etc/quipc.conf \
-    $(LOCAL_PATH)/etc/sap.conf:system/etc/sap.conf \
     $(LOCAL_PATH)/etc/sec_config:system/etc/sec_config
 
 # firmware
