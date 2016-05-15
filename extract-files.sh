@@ -1,8 +1,8 @@
 #!/bin/bash
 
 #set -e
-export DEVICE=N939Sc
-export VENDOR=ZTE
+export DEVICE=N939sc
+export VENDOR=zte
 
 if [ $# -eq 0 ]; then
   SRC=adb

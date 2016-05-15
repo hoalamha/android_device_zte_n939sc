@@ -1,7 +1,7 @@
 #!/bin/bash
 
-DEVICE=N939St
-VENDOR=ZTE
+DEVICE=N939sc
+VENDOR=zte
 
 OUTDIR=vendor/$VENDOR/$DEVICE
 MAKEFILE=../../../$OUTDIR/$DEVICE-vendor-blobs.mk
@@ -158,7 +158,7 @@ EOF
 
 LOCAL_PATH := \$(call my-dir)
 
-ifeq (\$(TARGET_DEVICE),N939St)
+ifeq (\$(TARGET_DEVICE),N939sc)
 ifeq (\$(QCPATH),)
 
 include \$(CLEAR_VARS)
