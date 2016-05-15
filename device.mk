@@ -95,7 +95,15 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/acdbdata/MTP/msm8939-tapan-snd-card/MTP_WCD9306_Speaker_cal.acdb:system/etc/acdbdata/MTP/msm8939-tapan-snd-card/MTP_WCD9306_Speaker_cal.acdb \
     $(LOCAL_PATH)/configs/audio_effects.conf:system/vendor/etc/audio_effects.conf \
     $(LOCAL_PATH)/configs/audio_policy.conf:system/etc/audio_policy.conf \
-    $(LOCAL_PATH)/configs/mixer_paths_mtp.xml:system/etc/mixer_paths_mtp.xml
+    $(LOCAL_PATH)/configs/mixer_paths_mtp.xml:system/etc/mixer_paths_mtp.xml \
+    $(LOCAL_PATH)/configs/aanc_tuning_mixer.txt:system/etc/aanc_tuning_mixer.txt \
+    $(LOCAL_PATH)/configs/mixer_paths.xml:system/etc/mixer_paths.xml \
+    $(LOCAL_PATH)/configs/mixer_paths_qrd_skuh.xml:system/etc/mixer_paths_qrd_skuh.xml \
+    $(LOCAL_PATH)/configs/mixer_paths_qrd_skuhf.xml:system/etc/mixer_paths_qrd_skuhf.xml \
+    $(LOCAL_PATH)/configs/mixer_paths_qrd_skui.xml:system/etc/mixer_paths_qrd_skui.xml \
+    $(LOCAL_PATH)/configs/mixer_paths_sbc.xml:system/etc/mixer_paths_sbc.xml \
+    $(LOCAL_PATH)/configs/mixer_paths_skuk.xml:system/etc/mixer_paths_skuk.xml \
+    $(LOCAL_PATH)/configs/mixer_paths_wcd9306.xml:system/etc/mixer_paths_wcd9306.xml 
 
 # ANT+
 PRODUCT_PACKAGES += \
@@ -284,6 +292,33 @@ PRODUCT_PACKAGES += \
     libxml2 \
     wpa_supplicant \
     wpa_supplicant.conf
+
+#Blkid
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/blkid.tab:system/etc/blkid.tab \
+    $(LOCAL_PATH)/configs/blkid.tab.old:system/etc/blkid.tab.old \
+
+#Qualcomm Config
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/hcidump.sh:system/etc/hcidump.sh \
+    $(LOCAL_PATH)/configs/hsic.control.bt.sh:system/etc/hsic.control.bt.sh \
+    $(LOCAL_PATH)/configs/init.ath3k.bt.sh:system/etc/init.ath3k.bt.sh \
+    $(LOCAL_PATH)/configs/init.qcom.audio.sh:system/etc/init.qcom.audio.sh \
+    $(LOCAL_PATH)/configs/init.qcom.debug.sh:system/etc/init.qcom.debug.sh \
+    $(LOCAL_PATH)/configs/init.qcom.efs.sync.sh:system/etc/init.qcom.efs.sync.sh \
+    $(LOCAL_PATH)/configs/init.qcom.post_boot.sh:system/etc/init.qcom.post_boot.sh \
+    $(LOCAL_PATH)/configs/init.qcom.sdio.sh:system/etc/init.qcom.sdio.sh \
+    $(LOCAL_PATH)/configs/init.qcom.uicc.sh:system/etc/init.qcom.uicc.sh \
+    $(LOCAL_PATH)/configs/init.qcom.wifi.sh:system/etc/init.qcom.wifi.sh \
+    $(LOCAL_PATH)/configs/init.qcom.zram.sh:system/etc/init.qcom.zram.sh \
+    $(LOCAL_PATH)/configs/init.qcom.fm.sh:system/etc/init.qcom.fm.sh \
+    $(LOCAL_PATH)/configs/install-recovery.sh:system/etc/install-recovery.sh \
+    $(LOCAL_PATH)/configs/memory_shrinkd.sh:system/etc/memory_shrinkd.sh \
+    $(LOCAL_PATH)/configs/qca6234-service.sh:system/etc/qca6234-service.sh \
+    $(LOCAL_PATH)/configs/qca6234-service.sh:system/etc/qca6234-service.sh \
+    $(LOCAL_PATH)/configs/spn-conf.xml:system/etc/spn-conf.xml \
+    $(LOCAL_PATH)/configs/xtra_root_cert.pem:system/etc/xtra_root_cert.pem \
+    $(LOCAL_PATH)/configs/xtwifi.conf:system/etc/xtwifi.conf 
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/hostapd.accept:system/etc/hostapd/hostapd.accept \
