@@ -308,6 +308,14 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/blkid.tab:system/etc/blkid.tab \
     $(LOCAL_PATH)/configs/blkid.tab.old:system/etc/blkid.tab.old \
 
+# Camera
+PRODUCT_PACKAGES += \
+    camera.msm8916 \
+    libshim_camera \
+    libboringssl-compat \
+    libstlport \
+    Snap
+
 #Qualcomm Config
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/hcidump.sh:system/etc/hcidump.sh \
