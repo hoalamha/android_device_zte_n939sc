@@ -175,7 +175,7 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_RECOVERY_SWIPE := true
 BOARD_USES_MMCUTILS := true
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
-TARGET_RECOVERY_FSTAB := device/coolpad/cp8675/recovery/recovery.fstab
+TARGET_RECOVERY_FSTAB := device/zte/N939sc/recovery/recovery.fstab
 
 # Video
 TARGET_HAVE_SIGNED_VENUS_FW := true
