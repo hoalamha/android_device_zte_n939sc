@@ -156,10 +156,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/fstab.qcom:root/fstab.qcom \
     $(LOCAL_PATH)/rootdir/init.qcom.rc:root/init.qcom.rc \
-    $(LOCAL_PATH)/rootdir/init.qcom.usb.rc:root/init.qcom.usb.rc \
     $(LOCAL_PATH)/rootdir/init.target.rc:root/init.target.rc \
     $(LOCAL_PATH)/rootdir/ueventd.qcom.rc:root/ueventd.qcom.rc \
-    $(LOCAL_PATH)/rootdir/rootdir/init.class_main.sh:root/rootdir/init.class_main.sh \
+    $(LOCAL_PATH)/rootdir/init.class_main.sh:root/init.class_main.sh \
     $(LOCAL_PATH)/rootdir/init.mdm.sh:root/init.mdm.sh \
     $(LOCAL_PATH)/rootdir/init.nubia.sh:root/init.nubia.sh \
     $(LOCAL_PATH)/rootdir/init.nubia.usb.rc:root/init.nubia.usb.rc \
@@ -305,8 +304,8 @@ PRODUCT_PACKAGES += \
 
 #Blkid
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/blkid.tab:system/etc/blkid.tab \
-    $(LOCAL_PATH)/configs/blkid.tab.old:system/etc/blkid.tab.old \
+    $(LOCAL_PATH)/etc/blkid.tab:system/etc/blkid.tab \
+    $(LOCAL_PATH)/etc/blkid.tab.old:system/etc/blkid.tab.old \
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -318,25 +317,25 @@ PRODUCT_PACKAGES += \
 
 #Qualcomm Config
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/hcidump.sh:system/etc/hcidump.sh \
-    $(LOCAL_PATH)/configs/hsic.control.bt.sh:system/etc/hsic.control.bt.sh \
-    $(LOCAL_PATH)/configs/init.ath3k.bt.sh:system/etc/init.ath3k.bt.sh \
-    $(LOCAL_PATH)/configs/init.qcom.audio.sh:system/etc/init.qcom.audio.sh \
-    $(LOCAL_PATH)/configs/init.qcom.debug.sh:system/etc/init.qcom.debug.sh \
-    $(LOCAL_PATH)/configs/init.qcom.efs.sync.sh:system/etc/init.qcom.efs.sync.sh \
-    $(LOCAL_PATH)/configs/init.qcom.post_boot.sh:system/etc/init.qcom.post_boot.sh \
-    $(LOCAL_PATH)/configs/init.qcom.sdio.sh:system/etc/init.qcom.sdio.sh \
-    $(LOCAL_PATH)/configs/init.qcom.uicc.sh:system/etc/init.qcom.uicc.sh \
-    $(LOCAL_PATH)/configs/init.qcom.wifi.sh:system/etc/init.qcom.wifi.sh \
-    $(LOCAL_PATH)/configs/init.qcom.zram.sh:system/etc/init.qcom.zram.sh \
-    $(LOCAL_PATH)/configs/init.qcom.fm.sh:system/etc/init.qcom.fm.sh \
-    $(LOCAL_PATH)/configs/install-recovery.sh:system/etc/install-recovery.sh \
-    $(LOCAL_PATH)/configs/memory_shrinkd.sh:system/etc/memory_shrinkd.sh \
-    $(LOCAL_PATH)/configs/qca6234-service.sh:system/etc/qca6234-service.sh \
-    $(LOCAL_PATH)/configs/qca6234-service.sh:system/etc/qca6234-service.sh \
-    $(LOCAL_PATH)/configs/spn-conf.xml:system/etc/spn-conf.xml \
-    $(LOCAL_PATH)/configs/xtra_root_cert.pem:system/etc/xtra_root_cert.pem \
-    $(LOCAL_PATH)/configs/xtwifi.conf:system/etc/xtwifi.conf 
+    $(LOCAL_PATH)/etc/hcidump.sh:system/etc/hcidump.sh \
+    $(LOCAL_PATH)/etc/hsic.control.bt.sh:system/etc/hsic.control.bt.sh \
+    $(LOCAL_PATH)/etc/init.ath3k.bt.sh:system/etc/init.ath3k.bt.sh \
+    $(LOCAL_PATH)/etc/init.qcom.audio.sh:system/etc/init.qcom.audio.sh \
+    $(LOCAL_PATH)/etc/init.qcom.debug.sh:system/etc/init.qcom.debug.sh \
+    $(LOCAL_PATH)/etc/init.qcom.efs.sync.sh:system/etc/init.qcom.efs.sync.sh \
+    $(LOCAL_PATH)/etc/init.qcom.post_boot.sh:system/etc/init.qcom.post_boot.sh \
+    $(LOCAL_PATH)/etc/init.qcom.sdio.sh:system/etc/init.qcom.sdio.sh \
+    $(LOCAL_PATH)/etc/init.qcom.uicc.sh:system/etc/init.qcom.uicc.sh \
+    $(LOCAL_PATH)/etc/init.qcom.wifi.sh:system/etc/init.qcom.wifi.sh \
+    $(LOCAL_PATH)/etc/init.qcom.zram.sh:system/etc/init.qcom.zram.sh \
+    $(LOCAL_PATH)/etc/init.qcom.fm.sh:system/etc/init.qcom.fm.sh \
+    $(LOCAL_PATH)/etc/install-recovery.sh:system/etc/install-recovery.sh \
+    $(LOCAL_PATH)/etc/memory_shrinkd.sh:system/etc/memory_shrinkd.sh \
+    $(LOCAL_PATH)/etc/qca6234-service.sh:system/etc/qca6234-service.sh \
+    $(LOCAL_PATH)/etc/qca6234-service.sh:system/etc/qca6234-service.sh \
+    $(LOCAL_PATH)/etc/spn-conf.xml:system/etc/spn-conf.xml \
+    $(LOCAL_PATH)/etc/xtra_root_cert.pem:system/etc/xtra_root_cert.pem \
+    $(LOCAL_PATH)/etc/xtwifi.conf:system/etc/xtwifi.conf 
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/hostapd.accept:system/etc/hostapd/hostapd.accept \
