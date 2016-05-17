@@ -183,5 +183,8 @@ TARGET_HAVE_SIGNED_VENUS_FW := true
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
 
+#Ril
+BOARD_RIL_CLASS := ../../../device/zte/N939sc/ril/
+
 # inherit from the proprietary version
 -include vendor/zte/N939sc/BoardConfigVendor.mk
