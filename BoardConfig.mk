@@ -114,7 +114,7 @@ BOARD_USES_OPENSSL_SYMBOLS := true
 TARGET_HW_DISK_ENCRYPTION := true
 
 #Enable SW based full disk encryption
-TARGET_SWV8_DISK_ENCRYPTION := true
+#TARGET_SWV8_DISK_ENCRYPTION := true
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
