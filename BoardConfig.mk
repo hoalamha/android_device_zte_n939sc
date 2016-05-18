@@ -161,7 +161,7 @@ TARGET_PROVIDES_LIBLIGHT := true
 TARGET_RIL_VARIANT := caf
 
 # Added to indicate that protobuf-c is supported in this build
-PROTOBUF_SUPPORTED := true
+#PROTOBUF_SUPPORTED := true
 
 # Flags
 COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
