@@ -266,8 +266,7 @@ endif
 PRODUCT_PACKAGES += \
     calmodule.cfg \
     libcalmodule_akm.so \
-    libcalmodule_common \
-    sensors.msm8916
+    libcalmodule_common 
 
 # USB
 PRODUCT_PACKAGES += \
