@@ -305,7 +305,6 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    camera.msm8916 \
     libshim_camera \
     libboringssl-compat \
     libstlport \
