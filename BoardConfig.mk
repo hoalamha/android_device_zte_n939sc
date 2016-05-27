@@ -185,5 +185,8 @@ include device/qcom/sepolicy/sepolicy.mk
 #Ril
 BOARD_RIL_CLASS := ../../../device/zte/N939sc/ril/
 
+#RELEASETOOLS
+TARGET_RELEASETOOLS_EXTENSIONS := device/zte/N939sc/releasetools
+
 # inherit from the proprietary version
 -include vendor/zte/N939sc/BoardConfigVendor.mk
